@@ -1,0 +1,20 @@
+The first thing I had to do was update some libraries.
+
+The index.html file was missing.
+
+To run the project, Node.js version 16 is required — newer versions are not supported.
+error Error: error:0308010C:digital envelope routines::unsupported → solution: run with Node 16.
+
+To install Redux, Redux DOM, etc., I had to switch to Node 18 and then switch back to Node 16 to be able to run the project.
+
+I needed to find a cleaner way to work so I wouldn’t have to change the Node version every time I needed to install a new dependency.
+Solution:
+yarn add -D react-scripts@5.0.1
+
+Regarding filters, I wasn’t sure what was better: creating a constant with the genres on the frontend, or creating a new endpoint to return a JSON with all the genre data. In the end, I created the constant on the backend to generate a new endpoint, since when scaling a project it's always easier to add new information to the database, and that way there’s no hardcoded data on the frontend.
+
+I had some issues with the library’s props and the asynchronous behavior of component values, but they were resolved by reading the Material UI documentation.
+
+It wasn’t a big issue — just a normal part of the process. While writing the tests, I had to install additional libraries like @testing-library/react-hooks, for example.
+
+It’s not a major problem, but as I developed the tests, I had to install various packages and make sure all package versions were compatible.

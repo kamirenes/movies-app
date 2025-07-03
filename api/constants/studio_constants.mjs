@@ -187,3 +187,25 @@ export const studiosMap = {
   3: sony
 }
 
+export const GENRE_DETAILS = {
+  [GENRE_ID.adventures]: {
+    id: GENRE_ID.adventures,
+    code: GENRE_STRING[GENRE_ID.adventures],
+    name: "Adventures",
+  },
+  [GENRE_ID.horror]: {
+    id: GENRE_ID.horror,
+    code: GENRE_STRING[GENRE_ID.horror],
+    name: "Horror",
+  },
+  [GENRE_ID.animation]: {
+    id: GENRE_ID.animation,
+    code: GENRE_STRING[GENRE_ID.animation],
+    name: "Animation",
+  },
+  [GENRE_ID.heroes]: {
+    id: GENRE_ID.heroes,
+    code: GENRE_STRING[GENRE_ID.heroes],
+    name: "Heroes",
+  },
+};

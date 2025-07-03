@@ -18,3 +18,8 @@ The api folder contains a small express api
 3. Create a PR from your forked branch against this master.
 
 
+## Solution - Important Read this before test the application!!!!!! 
+1. I added .env files on the BE and on the Frontend, usually these kind of files have to be on the .gitignore file, but like this is a test and to make easy the life of the person how check this test, I left those like a public files.
+2. To log-in in the platform are necessary the email: admin@example.com and password: 123456
+3. To navigate to sell movie section, and in that way to can use the functionality "sell movie to another studio" is necessary make log-in before, I thought the this kind of functionalities is better if are protected for a user token.
+4. To run the project without any issues is necessary run it using node version 18

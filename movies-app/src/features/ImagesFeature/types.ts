@@ -1,12 +1,19 @@
-export type TMovie = {
+export type Genre = {
+  id: number;
+  code: 'HOR' | 'ADV' | 'ANI' | 'HER';
+  name: 'adventures' | 'horror' | 'animation' | 'heroes';
+};
+
+export type Movie = {
   id: string;
   name: string;
   img?: string;
   studioId: string;
-  position: string;
+  price: number;
+  genre: number;
 };
 
-export type TStudio = {
+export type Studio = {
   id: string;
   name: string;
   shortName: string;
@@ -16,7 +23,7 @@ export type TStudio = {
 
 export enum CardStyleEnum {
   REGULAR = 'regularCard',
-  SMALL = 'smallCard'
+  SMALL = 'smallCard',
 }
 
-export type TCardStyle = CardStyleEnum
+export type CardStyle = CardStyleEnum;
