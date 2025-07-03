@@ -1,4 +1,4 @@
-import './App.css'
+/* import './App.css'
 import React, {PureComponent} from 'react'
 import {Avatar, Card, Grid, Typography} from '@material-ui/core'
 
@@ -89,3 +89,13 @@ class App extends PureComponent {
 }
 
 export default App
+ */
+
+import "./App.css";
+import ImagesFeature from "./features/ImagesFeature/ImagesFeature";
+
+const App = () => {
+  return <ImagesFeature />;
+};
+
+export default App;
