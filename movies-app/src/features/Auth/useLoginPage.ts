@@ -1,10 +1,10 @@
 import { loginRequest } from '../../ducks/auth/slice';
-import { Credentials } from '../../ducks/auth/types';
 import { useAppDispatch } from '../../hooks/useAppDispatch';
 import { useCallback, useEffect, useState } from 'react';
 import { useAppSelector } from '../../hooks/useAppSelector';
 import { getToken } from '../../auth/tokenManager';
 import { useNavigate } from 'react-router-dom';
+import { Credentials } from '../../ducks/auth/types';
 
 const useLoginPage = () => {
   const dispatch = useAppDispatch();
